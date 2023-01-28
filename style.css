@@ -88,12 +88,38 @@ body {
     font-size: 2rem;
     color: red;
     display: block;
+    animation: moveInRight 3s;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(-300px);
+    }
+    80%{
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(1000px);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .home .slide .content h3{
     font-size: 5rem;
     color: #fff;
     padding: 1rem 0;
+    animation: moveInLeft 3s;
 }
 
 .btn {
@@ -105,6 +131,19 @@ body {
     color: #fff;
     cursor: pointer;
     font-size: 1.7rem;
+    animation: moveInUp 3s;
+}
+
+@keyframes moveInUp {
+    0% {
+        transform: translateY(1000px);
+    }
+    80%{
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 .btn:hover {
@@ -297,6 +336,11 @@ body {
                 inset 3px 3px 10px rgb(114, 106, 106), inset -3px -3px 10px rgb(134, 142, 134)
 }
 
+.card-size:hover {
+    transform: scale(1.03);
+    transition: all .3s linear;
+}
+
 .pricing-plan-features {
     margin-top: 5%;
     color: gray;
@@ -341,7 +385,7 @@ body {
 .blog-heading {
     color: #f00;
     font-size: 1.5rem;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
 }
 
 .blog-discount {
@@ -357,3 +401,5 @@ body {
     margin-top: 2%;
     padding: 0px 200px;
 }
+
+
