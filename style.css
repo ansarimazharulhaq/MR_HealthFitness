@@ -129,7 +129,7 @@ body {
 
 .about-container img {
     width: 50%;
-    height: 100vh;
+    height: 90vh;
 }
 
 .about-content {
@@ -263,6 +263,97 @@ body {
     transition: all .5s linear;
 }
 
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+}
 
+.pricing-plan {
+    color: #f00;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
 
+.pricing-plan-heading {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2%;
+}
 
+.pricing-plan-para {
+    color: gray;
+    margin-top: 4%;
+    font-size: 1.3rem;
+}
+
+.card-size{
+    width: 30vw;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(33, 31, 31), -3px -3px 10px rgb(64, 67, 64),
+                inset 3px 3px 10px rgb(114, 106, 106), inset -3px -3px 10px rgb(134, 142, 134)
+}
+
+.pricing-plan-features {
+    margin-top: 5%;
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.pricing-plan-features i {
+    padding-top: 10px;
+}
+
+.pricing-plan-feature {
+    display: inline;
+}
+
+.plan-price {
+    color: #fff;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2rem;
+
+}
+
+.plan-price span {
+    color: #f00;
+    margin-left: 1%;
+    font-size: 5rem;
+}
+
+/* Blog */
+
+.blog-container {
+    margin-top: 3%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-heading {
+    color: #f00;
+    font-size: 1.5rem;
+    letter-spacing: 3px;    
+}
+
+.blog-discount {
+    color: #fff;
+    margin-top: 2%;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.blog-para {
+    color: gray;
+    letter-spacing: 2px;
+    margin-top: 2%;
+    padding: 0px 200px;
+}
